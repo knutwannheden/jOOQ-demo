@@ -2,6 +2,9 @@ FROM gitpod/workspace-mysql
 
 USER root
 
+RUN apt-get update && apt-get install -y uidmap
+
+
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
 #
