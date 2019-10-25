@@ -3,6 +3,7 @@ FROM gitpod/workspace-mysql
 USER root
 
 RUN apt-get update && apt-get install -y uidmap
+RUN apt-get install -y strace
 
 
 # Install custom tools, runtime, etc. using apt-get
