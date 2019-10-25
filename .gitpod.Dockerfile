@@ -4,6 +4,7 @@ USER root
 
 RUN apt-get update && apt-get install -y uidmap
 RUN apt-get install -y strace
+RUN echo 0 > /proc/sys/kernel/unprivileged_userns_clone
 
 
 # Install custom tools, runtime, etc. using apt-get
