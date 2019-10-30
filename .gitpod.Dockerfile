@@ -9,7 +9,7 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsof
 
 RUN apt-get update \
     && apt-get -y install apt-transport-https \
-    && apt-get -y install dotnet-sdk-3.0
+    && apt-get -y install dotnet-sdk-2.2
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
