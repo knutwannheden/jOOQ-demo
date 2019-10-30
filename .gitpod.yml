@@ -12,3 +12,4 @@ tasks:
 vscode:
   extensions:
     - formulahendry.vscode-mysql@0.4.0:ozffYq4AkDKzFalv61HFIw==
+    - Oracle.oracledevtools@19.3.2:kGCpjj0SbFUu66290YMnRA==

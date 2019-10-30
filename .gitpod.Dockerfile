@@ -2,9 +2,15 @@ FROM gitpod/workspace-mysql
 
 USER root
 
-RUN apt-get update && apt-get install -y uidmap
-RUN apt-get install -y strace
+# Install dotnet
+RUN wget -q https://packages.microsoft.com/config/ubuntu/19.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+    && dpkg -i packages-microsoft-prod.deb \
+    && rm packages-microsoft-prod.deb
 
+RUN apt-get update \
+    && apt-get install apt-transport-https \
+    && apt-get update \
+    && apt-get install dotnet-sdk-3.0
 
 # Install custom tools, runtime, etc. using apt-get
 # For example, the command below would install "bastet" - a command line tetris clone:
