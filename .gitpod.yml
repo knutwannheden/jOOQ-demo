@@ -9,3 +9,6 @@ ports:
 tasks:
 - init: echo 'init script' # runs during prebuild
   command: echo 'start script'
+vscode:
+  extensions:
+    - formulahendry.vscode-mysql@0.4.0:ozffYq4AkDKzFalv61HFIw==
